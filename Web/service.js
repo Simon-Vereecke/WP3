@@ -61,7 +61,7 @@ function handleClickPostContact() {
             body: JSON.stringify(contact)
         }
     ).then( (response) => {
-        if(response.status == 200) { // stond eerst op 201
+        if(response.status == 200) { // stond eerst op 201 ( == Created)
             return response.json();
         } else {
             throw response.status;
